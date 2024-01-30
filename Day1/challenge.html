@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+  </head>
+  <style>
+    .card {
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+        0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    }
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 0 solid rgba(0, 0, 0, 0.125);
+      border-radius: 0.25rem;
+    }
+
+    .card-body {
+      flex: 1 1 auto;
+      min-height: 1px;
+      padding: 1rem;
+    }
+
+    .gutters-sm {
+      margin-right: -8px;
+      margin-left: -8px;
+    }
+
+    .gutters-sm > .col,
+    .gutters-sm > [class*="col-"] {
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+    .mb-3,
+    .my-3 {
+      margin-bottom: 1rem !important;
+    }
+
+    .h-100 {
+      height: 100% !important;
+    }
+
+    .shadow-none {
+      box-shadow: none !important;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="#">Portofolio KW</a>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="challenge.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inventory</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <br>
+      <div class="container">
+        <div class="card">
+          <h5 class="card-header">About Me</h5>
+          <div class="row gutters-sm">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <div
+                    class="d-flex flex-column align-items-center text-center"
+                  >
+                    <img
+                      src="img/avatar.png"
+                      alt="Admin"
+                      class="rounded-circle"
+                      width="97"
+                    />
+                    <div class="mt-3">
+                      <h4>Muhammad Reza Zulfikarsyah</h4>
+                      <p class="text-secondary mb-1">Tukang Tidur</p>
+                      <p class="text-muted font-size-sm">Surabaya</p>
+                      <button class="btn btn-success">Follow</button>
+                      <button class="btn btn-secondary">Message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Full Name</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      Muhammad Reza Zulfikarsyah
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Email</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                      rezazulfff@gmail.com
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Phone</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">08888888888</div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Age</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">24</div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Address</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">Jl. Jalan 1</div>
+                  </div>
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input
+              type="nama"
+              class="form-control"
+              id="nama"
+              placeholder="Ketikan Nama Anda"
+            />
+          </div>
+          <div class="form-group">
+            <label for="role">Role</label>
+            <input
+              type="role"
+              class="form-control"
+              id="role"
+              placeholder="Role"
+            />
+          </div>
+          <div class="form-group">
+            <label for="availability">Availability</label>
+            <input
+              type="availability"
+              class="form-control"
+              id="availability"
+              placeholder="Availability"
+            />
+          </div>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="age" class="form-control" id="age" placeholder="Age" />
+          </div>
+          <div class="form-group">
+            <label for="location">Lokasi</label>
+            <input
+              type="location"
+              class="form-control"
+              id="location"
+              placeholder="Lokasi"
+            />
+          </div>
+          <div class="form-group">
+            <label for="experience">Years Experience</label>
+            <input
+              type="experience"
+              class="form-control"
+              id="experience"
+              placeholder="Years"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email"
+            />
+          </div>
+          <br />
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>

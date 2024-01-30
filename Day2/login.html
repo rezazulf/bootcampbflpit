@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="admin@co"><br><br>
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" value="password"><br><br>
+        <button type="button" onclick="login()">Login</button>
+    </form>
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username == "admin@co" && password == "password") {
+                alert("Login Sukses");
+                window.location.assign('../Day1/challenge.html');
+            } else {
+                alert("Login Gagal");
+                window.location.assign('login.html');
+            }
+        }
+    </script>
+</body>
+
+</html>
