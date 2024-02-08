@@ -1,57 +1,85 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <title>Halo Mure</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
-  <link rel="stylesheet" href="halomure-global.css">
-  <link rel="stylesheet" href="halomure-landing.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/favicon.ico" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+  <!-- <link href="assets/css/variables.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-blue.css" rel="stylesheet"> -->
+  <link href="assets/css/variables-green.css" rel="stylesheet">
+  <!-- <link href="assets/css/variables-orange.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-purple.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
-  <nav>
-    <div class="logo"></div>
-    <ul class="menu animate__animated animate__fadeIn">
-      <div class="menu__item toggle"><span></span></div>
-      <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
-      <li class="menu__item"><a href="contact-us.html" class="link link--dark"><i class="fa fa-phone"></i> Contact
-          Us</a></li>
-      <li class="menu__item"><a href="about-us.html" class="link link--dark"><i class="fa fa-address-card"></i> About
-          Us</a>
-      </li>
-      <li class="menu__item"><a href="portofolio.html" class="link link--dark"><i class="fa fa-users"></i>
-          Portofolio</a></li>
-      <li class="menu__item"><a href="blog.html" class="link link--dark"><i class="fa fa-rss"></i> Blog</a></li>
-      <li class="menu__item"><a href="todos.html" class="link link--dark"><i class="fa fa-check-square"></i> Todos</a>
-      </li>
-      <li class="menu__item"><a href="https://github.com/rezazulf" class="link link--dark"><i class="fa fa-github"></i>
-          Github</a></li>
-    </ul>
-  </nav>
-  <div class="hero">
-    <h1 class="hero__title">Halo Mure</h1>
-    <p class="hero__description">Jasa Pembuatan Program Untuk Berbagai Proyek Akademik Mahasiswa</p>
-  </div>
-  <div class="hero__terminal">
-    <pre>
-        <!-- Place your demo code here -->
-        <code class="shell-session demo">haloMure ~ $ </code>
-      </pre>
-  </div>
-  <div class="callout">
-    <button type="button" class="button--primary" data-bs-toggle="modal" data-bs-target="#modalOrder">
-      Order
-    </button>
-    <!-- Button trigger modal -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo-no-background.svg" alt="">
+        <!-- <h1>Halo Mure<span>.</span></h1> -->
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="todos.html">Todos</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav><!-- .navbar -->
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative"
+      data-aos="zoom-out">
+      <img src="assets/img/code_preview.png" class="img-fluid animated">
+      <h2>Halo <span>Mure</span></h2>
+      <p>Jasa Pembuatan Program Untuk Berbagai Proyek Akademik Mahasiswa.</p>
+      <div class="d-flex">
+        <a class="btn-get-started scrollto" data-bs-toggle="modal" data-bs-target="#modalOrder">Order</a>
+      </div>
+    </div>
 
     <!-- Modal -->
     <div class="modal fixed-right fade" tabindex="-1" role="dialog" id="modalOrder">
@@ -71,20 +99,23 @@
                 <tr>
                   <td>Make It</td>
                   <td>Pengerjaan tugas bersama ahlinya.</td>
-                  <td class="order_now"><a href="#" class="scroll"><strong type="button"><a href="#">Order
+                  <td class="order_now"><a href="index.html#contact" class="scroll"><strong type="button"><a
+                          href="index.html#contact">Order
                           Now!</strong></a></a></td>
                 </tr>
                 <tr>
                   <td>Konsultasi</td>
                   <td>Konsultasi programming bersama para ahli.</td>
-                  <td class="order_now"><a href="#" class="scroll"><strong type="button"><a href="#">Order
-                    Now!</strong></a></a></td>
+                  <td class="order_now"><a href="index.html#contact" class="scroll"><strong type="button"><a
+                          href="index.html#contact">Order
+                          Now!</strong></a></a></td>
                 </tr>
                 <tr>
                   <td>E-learning</td>
                   <td>E-learning belajar programming untuk pemula.</td>
-                  <td class="order_now"><a href="#" class="scroll"><strong type="button"><a href="#">Order
-                    Now!</strong></a></a></td>
+                  <td class="order_now"><a href="index.html#contact" class="scroll"><strong type="button"><a
+                          href="index.html#contact">Order
+                          Now!</strong></a></a></td>
                 </tr>
               </tbody>
             </table>
@@ -92,245 +123,947 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="wrapper">
-    <div class="kenalan">
-      <h3 class="section__title" style="padding-top: 2rem;">Hi kamu👋😀</h3>
-      <h4 class="section__title" style="padding-bottom: 1rem;">Kenalan yuk sama Halo Mure</h4>
-      <div class="tab__container">
-        <ul class="tab__menu">
-          <li class="tab active" data-tab="about">About</li>
-          <li class="tab" data-tab="specialization">Specialization</li>
-        </ul>
-        <pre class="nohighlight code">
-            <code class="tab__pane active mac">Halo Mure adalah sebuah startup yang bergerak dibidang bantuan & bimbingan pembuatan program IT untuk proyek & penelitian akademik mahasiswa seperti: skripsi, tugas akhir, dan disertasi.</code>
-            <code class="tab__pane specialization" style="padding-bottom: 3rem;">Kami dengan bangga ingin berbagi bahwa tim programmer kami merupakan kelompok individu yang sangat berkompeten dan berdedikasi. Memiliki pengetahuan mendalam dan keterampilan yang telah terbukti.</code>
-            <br>
-            <a href="/about" class="text-dark">
-              <h6>Tentang Halo Mure<i class="fa fa-long-arrow-right hide-on-small-only"
-                  style="margin-left:5px; font-size:13px;"></i></h6>
-            </a>
-          </pre>
-      </div>
-    </div>
-    <div class="section">
+
+  </section>
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
       <div class="container">
-        <div class="section-title section-content center-align" style="max-width: 750px; margin:auto;">
-          <h1 class="tulisan1" style="padding-bottom: 7rem;">Bagaimana Halo Mure Membantu Skripsi & Tugas Akhir Kamu?</h1>
-        </div>
-        <div class="feature">
-          <div class="feature__item" style="padding-bottom: 10rem;">
-            <h3 class="section__title">Pembuatan Program</h3>
-            <p>Jasa pembuatan program IT, pembuatan model machine learning, dan perbaikan bug untuk beragam proyek
-              akademik.</p>
-            <!-- Button trigger modal -->
-            <strong type="button" data-bs-toggle="modal" data-bs-target="#pembuatanProgram">
-              Selengkapnya <i class="fa fa-long-arrow-right"></i>
-            </strong>
 
-            <!-- Modal -->
-            <div id="pembuatanProgram" class="modal fixed-right fade" tabindex="-1" role="dialog">
-              <div class="modal-dialog modal-dialog-aside" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Make It</h5>
-                  </div>
-                  <div class="modal-body">
-                    <p>Make It adalah layanan jasa pembuatan program, bug-fixing dan model AI/ML untuk berbagai proyek
-                      akademik mahasiswa, dosen, maupun peneliti. Lebih dari sekedar joki, kami membantu kamu memahami.
-                    </p>
-                    <div class="modal-footer">
-                      <strong type="button"><a href="#">Order Now!</strong></a>
-                      <strong type="button"><a href="#">Selengkapnya</strong></a>
-                    </div>
+        <div class="row gy-3">
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <h4 class="stretched-link">Make It</h4>
+              <p>Jasa pembuatan program IT, pembuatan model machine learning, dan perbaikan bug untuk beragam proyek
+                akademik.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+              <h4 class="stretched-link">Konsultasi</h4>
+              <p>Konsultasikan berbagai error, issue, dan kebingungan kamu secara teoritis expert mentor Halo Mure</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <h4 class="stretched-link">E-learning</h4>
+              <p>Kamu bisa mulai belajar dari berbagai modul di E-Learning Halo Mure atau mengikuti kelas-kelasnya</p>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>About Us</h2>
+          <p>Jasa Pembuatan Program Untuk Berbagai Proyek Akademik Mahasiswa.</p>
+        </div>
+
+        <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-5">
+            <div class="about-img">
+              <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <h3 class="pt-0 pt-lg-5">Kita disini menyediakan Jasa Pembuatan Program loh! yang dapat disesuaikan untuk
+              memenuhi
+              kebutuhan berbagai Proyek Akademik Mahasiswa, dengan penuh dedikasi dan kualitas terbaik.
+            </h3>
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-3">
+              <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Siapa itu Halo Mure?</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Misi Kami</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Yang kami tawarkan</a></li>
+            </ul><!-- End Tabs -->
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+              <div class="tab-pane fade show active" id="tab1">
+
+                <p class="fst-italic">Yo, meet StudyBuddy! Kita bukan sekadar layanan edukasi biasa, tapi temen
+                  seperjalanan buat ngebantuin lu banget dalam penelitian, bikin program, sampe mentorin tugas akhir,
+                  skripsi, disertasi, thesis, dan proyek akademik lainnya buat mahasiswa. Jangan salah, bukan joki
+                  abal-abal, tapi kita lebih ke partner yang jadi insinyur handal, mentor keren, dan alternatif asik
+                  buat nambah pemahaman lu di kampus. Kita ada buat jawabin tantangan dan kebutuhan lu sebagai
+                  pembelajar sejati. Gak maksudnya ngomongin sistem pendidikan bakal jadi beda abis ada kita,
+                  tapi setidaknya lu punya opsi lain kalo udah berasa lelah dan gak tau harus mulai dari mana.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Yakin mudah bang?</h4>
+                </div>
+                <p>Mudah dong, nanti akan diajarkan sama ahlinya-ahli dari <strong>Halo Mure!</strong></p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Bisa ngoding ga bang?</h4>
+                </div>
+                <p>Bisa dong, kan <strong>Halo Mure</strong> fokusnya di bidang komputer</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Cepet ga pengerjaannya bang?</h4>
+                </div>
+                <p>Cepet dong, kita udah tau rasanya kekejar deadline kok😭</p>
+              </div>
+
+              <div class="tab-pane fade show" id="tab2">
+
+                <p class="fst-italic">Di Halo Mure, kita paham kalo kehidupan akademis dapat
+                  menjadi tantangan. Misi kita sederhana: menyediakan bantuan handal dan terpercaya untuk membantu lu
+                  menangani tugas-tugas akademis dengan lebih mudah dan efisien terutama yang berada pada bidang
+                  komputer.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Apa programmer kita kompeten?</h4>
+                </div>
+                <p>Kita memiliki programmer yang handal. Tenang aja, semua program yang di request akan selalu seperti
+                  apa yang lu mau.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Kalo fiturnya kurang bagaimana?</h4>
+                </div>
+                <p>Tenang aja. Kalian mendapatkan 3x kesempatan untuk melakukan perubahan fitur yang diinginkan loh.
+                </p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Sistemnya bagaimana kak?</h4>
+                </div>
+                <p>- Pertama, kita ngobrol dulu aja yuk buat konsul dan arrage kebutuhan kamu. Kamu bisa kontak tim
+                  kita
+                  via WhatsApp/Contact Us.
+                  <br>
+                  - Jika tekad sudah bulat, silahkan order langsung paketnya dan lakukan pembayaran. Untuk Make It
+                  kamu
+                  bisa DP dulu 50%.
+                  <br>
+                  - Kita bakal langsung bantuin kamu. Kamu <strong> ga perlu install</strong> aplikasi apapun, apalagi
+                  sampe masang twibbon ato paid promote.
+                </p>
+
+              </div><!-- End Tab 2 Content -->
+
+              <div class="tab-pane fade show" id="tab3">
+
+                <p class="fst-italic">Tingkatkan produktivitas dan kenyamanan dengan solusi inovatif kami. Temukan
+                  cara baru untuk menyederhanakan tugas sehari-hari dan mencapai hasil lebih efisien bersama kita!
+                  Kira-kira apa yang kami tawarkan ya ?</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Make It</h4>
+                </div>
+                <p><strong>Make It</strong> adalah jasa pembuatan program IT, pembuatan model machine learning, dan
+                  perbaikan bug untuk beragam proyek
+                  akademik.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Konsultasi</h4>
+                </div>
+                <p><strong>Konsultasikan</strong> berbagai error, issue, dan kebingungan kamu secara teoritis dengan
+                  expert mentor yang dimiliki oleh Halo Mure!</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>E-learning</h4>
+                </div>
+                <p>Di <strong>E-learning</strong> Halo Mure bisa mulai belajar dari berbagai modul di E-Learning Halo
+                  Mure atau mengikuti kelas-kelasnya.</p>
+
+              </div><!-- End Tab 3 Content -->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row g-5">
+
+          <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+            <h3>Kak, Kalau Mau Minta <em>Bantuan Halo Mure</em> Caranya Gimana Kak ?</h3>
+            <p> Kita ngobrol dulu aja yuk buat konsul dan arrange kebutuhan kamu. Kamu bisa kontak tim kita via
+              WhatsApp atau klik tombol Contact Us.</p>
+            <a class="cta-btn align-self-start" href="index.html#contact">Contact Us</a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+            <div class="img">
+              <img src="assets/img/cta.png" alt="" class="img-fluid">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Services</h2>
+          <p>Bagaimana Halo Mure Membantu Skripsi & Tugas-Tugas Kamu?</p>
+        </div>
+
+        <div class="row gy-5">
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-1.png" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <h3 class="stretched-link">Make It</h3>
+                <p>Jasa pembuatan program IT, pembuatan model machine learning, dan perbaikan bug untuk beragam proyek
+                  akademik.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-2.png" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-broadcast"></i>
+                </div>
+                <h3 class="stretched-link">Konsultasi</h3>
+                <p>Konsultasikan berbagai error, issue, dan kebingungan kamu secara teoritis expert mentor Halo Mure</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services-3.png" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-easel"></i>
+                </div>
+                <h3 class="stretched-link">E-learning</h3>
+                <p>Kamu bisa mulai belajar dari berbagai modul di E-Learning Halo Mure atau mengikuti kelas-kelasnya</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Harganya nih!</h2>
+          <p>Buat Penugasan Kamu Dong!</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item">
+
+              <div class="pricing-header">
+                <h3>Make It</h3>
+                <h4><sup>Start Rp.</sup>200k<span>/program</span></h4>
+              </div>
+
+              <ul>
+                <li><i class="bi bi-dot"></i> <span>Web Laravel, Codeigniter, React.</span></li>
+                <li><i class="bi bi-dot"></i> <span>Python & Back End</span></li>
+                <li><i class="bi bi-dot"></i> <span>Cloud Computing</span></li>
+              </ul>
+
+              <div class="text-center mt-auto">
+                <a href="index.html#contact" class="buy-btn">Buy Now</a>
+              </div>
+
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="pricing-item featured">
+
+              <div class="pricing-header">
+                <h3>Konsultasi</h3>
+                <h4><sup>Start Rp.</sup>100k<span>/Jam</span></h4>
+              </div>
+
+              <ul>
+                <li><i class="bi bi-dot"></i> <span>Nanya-nanya bebas seputar program yang ingin kamu ketahui</span>
+                </li>
+                <li><i class="bi bi-dot"></i> <span>Free 1 jam ketika order 5jam atau lebih</span></li>
+                <li><i class="bi bi-dot"></i> <span>Diskusi dengan ahlinya</span>
+                </li>
+                <li><i class="bi bi-dot"></i> <span>Dijamin pasti mengerti</span>
+              </ul>
+
+              <div class="text-center mt-auto">
+                <a href="index.html#contact" class="buy-btn">Buy Now</a>
+              </div>
+
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+            <div class="pricing-item">
+
+              <div class="pricing-header">
+                <h3>E-learning</h3>
+                <h4><sup>Start Rp.</sup>250k<span>/Program</span></h4>
+              </div>
+
+              <ul>
+                <li><i class="bi bi-dot"></i> <span>Tersedia bahasa yang mudah untuk pemula</span></li>
+                <li><i class="bi bi-dot"></i> <span>Ada beberapa level untuk menentukan peserta</span></li>
+                <li><i class="bi bi-dot"></i> <span>Tersedia tombol help jika stuck</span></li>
+                <li><i class="bi bi-dot"></i> <span>Ada task terakhir untuk mendapatkan hadiah/reward dari Halo
+                    Mure</span></li>
+              </ul>
+
+              <div class="text-center mt-auto">
+                <a href="index.html#contact" class="buy-btn">Buy Now</a>
+              </div>
+
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content px-xl-5">
+              <h3>Frequently Asked <strong>Questions</strong></h3>
+              <p>
+                Pertanyaan-pertanyaan yang sering ditanyakan nih!
+              </p>
+            </div>
+
+            <div class="accordion accordion-flush px-xl-5" id="faqlist">
+
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-1">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Apa itu E-learning?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    E-learning (electronic learning) adalah suatu bentuk pendidikan atau pembelajaran yang menggunakan
+                    teknologi digital, khususnya internet, untuk memberikan akses kepada siswa atau peserta untuk
+                    mengakses materi pembelajaran, berinteraksi dengan instruktur, dan berpartisipasi dalam kegiatan
+                    belajar secara online. E-learning dapat mencakup berbagai bentuk, seperti kursus daring, webinar,
+                    video pembelajaran, dan platform pembelajaran digital.
                   </div>
                 </div>
-              </div> <!-- modal-bialog .// -->
-            </div> <!-- modal.// -->
-          </div>
-          <div class="feature__item" style="padding-bottom: 10rem;">
-            <h3 class="section__title">Konsultasi</h3>
-            <p>Konsultasikan berbagai error, issue, dan kebingungan kamu secara teoritis expert mentor Halo Mure</p>
+              </div><!-- # Faq item-->
 
-            <!-- Button trigger modal -->
-            <strong type="button" data-bs-toggle="modal" data-bs-target="#konsultasi">
-              Selengkapnya <i class="fa fa-long-arrow-right"></i>
-            </strong>
-
-            <!-- Modal -->
-            <div id="konsultasi" class="modal fixed-right fade" tabindex="-1" role="dialog">
-              <div class="modal-dialog modal-dialog-aside" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Konsultasi</h5>
-                  </div>
-                  <div class="modal-body">
-                    <p>Konsultasikan berbagai error, issue, dan kebingungan kamu secara teoritis expert mentor Halo
-                      Mure.
-                    </p>
-                    <div class="modal-footer">
-                      <strong type="button"><a href="#">Order Now!</strong></a>
-                      <strong type="button"><a href="#">Selengkapnya</strong></a>
-                    </div>
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-2">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Apa keunggulan program konsultasi dibandingkan pembelajaran mandiri?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Konsultasi menyediakan pembelajaran terstruktur dan didukung oleh mentor ahli, memungkinkan
+                    interaksi langsung dan pertanyaan langsung, menciptakan lingkungan belajar yang intensif dan
+                    mendalam.
                   </div>
                 </div>
-              </div> <!-- modal-bialog .// -->
-            </div> <!-- modal.// -->
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-3">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Bagaimana cara mendaftar ke prgoram yang saya pilih?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Proses pendaftaran umumnya dilakukan secara online. Kunjungi situs web kami dan pilih program
+                    bootcamp yang diinginkan. Isi formulir pendaftaran dan ikuti langkah-langkah selanjutnya.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-4">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Apa yang dimaksud dengan Make It?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Jasa pembuatan program adalah layanan yang menyediakan solusi pengembangan perangkat lunak, mulai
+                    dari perencanaan dan desain hingga implementasi dan pemeliharaan program.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-5">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Bagaimana proses Make It dilakukan?
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Prosesnya dimulai dengan pertemuan untuk memahami kebutuhan Anda, dilanjutkan dengan perencanaan,
+                    desain, pengembangan, pengujian, dan implementasi. Setiap langkah melibatkan kolaborasi yang erat
+                    dengan klien.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+            </div>
+
           </div>
-          <div class="feature__item" style="padding-bottom: 10rem;">
-            <h3 class="section__title">E-learning</h3>
-            <p>Kamu bisa mulai belajar dari berbagai modul di E-Learning Halo Mure atau mengikuti kelas-kelasnya</p>
-            <strong type="button"><a href="#">
-                Selengkapnya <i class="fa fa-long-arrow-right"></i></a>
-            </strong>
-          </div>
-        </div>
-      </div>
-      <div class="expertise">
-        <ul class="expertise__detail">
-          <h3 class="expertise__title">Our</h3>
-          <li>Python <span class="expertise__label">Python</span></li>
-          <li>Laravel <span class="expertise__label">Laravel</span></li>
-          <li>Codeigniter <span class="expertise__label">Codeigniter</span></li>
-        </ul>
-        <ul class="expertise__detail">
-          <h3 class="expertise__title">Expertise</h3>
-          <li><span class="expertise__label">React JS</span> React JS</li>
-          <li><span class="expertise__label">Node JS</span> Node JS</li>
-          <li><span class="expertise__label">Cloud Computing</span> Cloud Computing</li>
-        </ul>
-      </div>
-      <div class="callout">
-        <p style="padding-top: 3rem; padding-bottom: 3rem;">Apa yang disebutkan diatas akan kita bantu buat tugas, skripsi, TA, disertasi dan proyek-proyek kamu.</p>
-      </div>
-    </div>
-  </div>
-  <div class="how">
-    <div class="wrapper">
-      <h3 class="section__title">Kak, Kalau Mau Minta Bantuan Halo Mure Caranya Gimana Kak ?</h3>
-      <div class="how__item">
-        <div class="how__meta">
-          <h4 class="how__title">1. Hubungi via WA</h4>
-          <small class="how__emoji">😊</small>
-        </div>
-        <div class="how__detail">
-          <ul>
-            <p>Pertama, kita ngobrol dulu aja yuk buat konsul dan arrage kebutuhan kamu.
-              Kamu bisa kontak tim kita via WhatsApp <strong><a href="#">Disini</a></strong></p>
-          </ul>
-        </div>
-      </div>
-      <div class="how__item">
-        <div class="how__meta">
-          <h4 class="how__title">2. Order and Pay</h4>
-          <small class="how__emoji">🤑</small>
-        </div>
-        <div class="how__detail">
-          <ul>
-            <p>Jika tekad sudah bulat, silahkan order langsung paketnya dan lakukan pembayaran. Untuk Make It kamu bisa
-              DP dulu 50%.</p>
-          </ul>
-        </div>
-      </div>
-      <div class="how__item">
-        <div class="how__meta">
-          <h4 class="how__title">3. Abistu kita bantuin</h4>
-          <small class="how__emoji">🤝</small>
-        </div>
-        <div class="how__detail">
-          <ul>
-            <p>Kita bakal langsung bantuin kamu. Kamu <strong>gak perlu</strong> install aplikasi apapun, apalagi sampe
-              masang twibbon ato paid promote.</p>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer id="footer" class="footer" style="color:#ffffff">
 
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html">
-            <span style="color:#ffffff">Halo Mure</span>
-          </a>
-          <p style="color:#ffffff">Jasa Pembuatan Program Untuk Berbagai Proyek Akademik Mahasiswa</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter" style="color:#ffffff"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook" style="color:#ffffff"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram" style="color:#ffffff"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin" style="color:#ffffff"><i class="bi bi-linkedin"></i></a>
-          </div>
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+            style='background-image: url("assets/img/faq.jpg");'>&nbsp;</div>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4 style="color:#ffffff"></h4>
-          <ul style="list-style-type: none; margin: 0; padding: 0;">
-            <li><a href="#" style="color:#ffffff "></a></li>
-            <li><a href="#" style="color:#ffffff"></a></li>
-            <li><a href="#" style="color:#ffffff"></a></li>
-            <li><a href="#" style="color:#ffffff"></a></li>
-            <li><a href="#" style="color:#ffffff"></a></li>
-          </ul>
-        </div>
+      </div>
+    </section><!-- End F.A.Q Section -->
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4 style="color:#ffffff">Our Services</h4>
-          <ul style="list-style-type: none; margin: 0; padding: 0;">
-            <li><a href="#" style="color:#ffffff">Make It</a></li>
-            <li><a href="#" style="color:#ffffff">Konsultasi</a></li>
-            <li><a href="#" style="color:#ffffff">E-learning</a></li>
-          </ul>
-        </div>
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio" data-aos="fade-up">
 
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4 style="color:#ffffff">Contact Us</h4>
-          <p style="color:#ffffff">
-            JL. Jalan 1 <br>
-            Jawa Tenggara 11111<br>
-            Indonesia <br><br>
-            <strong>Phone:</strong> +62 812 3456 7890<br>
-            <strong>Email:</strong> inicontoh@email.loh<br>
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Portfolio</h2>
+          <p>Portofolio yang pernah kami kerjakan
           </p>
+        </div>
 
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
+          data-portfolio-sort="original-order">
+
+          <ul class="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-books">Books</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row g-0 portfolio-container">
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
+              <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-product">
+              <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 1</h4>
+                <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-branding">
+              <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 1</h4>
+                <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books">
+              <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Books 1</h4>
+                <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
+              <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-product">
+              <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 2</h4>
+                <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-branding">
+              <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 2</h4>
+                <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books">
+              <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Books 2</h4>
+                <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
+              <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-product">
+              <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 3</h4>
+                <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-branding">
+              <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 3</h4>
+                <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books">
+              <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Books 3</h4>
+                <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Team</h2>
+          <p>Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas
+            asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p>
+        </div>
+
+        <div class="row gy-5">
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>Muhammad</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>Reza</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.png" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>Zulfikarsyah</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Recent Blog Posts Section ======= -->
+    <section id="recent-blog-posts" class="recent-blog-posts">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Blog</h2>
+          <p>Recent posts form our Blog</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
+              <div class="meta">
+                <span class="post-date">Tue, December 12</span>
+                <span class="post-author"> / Julia Parker</span>
+              </div>
+              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
+              <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa
+                est officiis. Modi cupiditate exercitationem qui magni est...</p>
+              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
+              <div class="meta">
+                <span class="post-date">Fri, September 05</span>
+                <span class="post-author"> / Mario Douglas</span>
+              </div>
+              <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
+              <p>Voluptatem nesciunt omnis libero autem tempora enim ut ipsam id. Odit quia ab eum assumenda. Quisquam
+                omnis aliquid necessitatibus tempora consectetur doloribus...</p>
+              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="post-box">
+              <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
+              <div class="meta">
+                <span class="post-date">Tue, July 27</span>
+                <span class="post-author"> / Lisa Hunter</span>
+              </div>
+              <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
+              <p>Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis repellat sed quae
+                consectetur magnam veritatis dicta nihil...</p>
+              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Recent Blog Posts Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>Get in touch with <strong>Halo Mure!</strong></p>
+        </div>
+
+      </div>
+      <div class="container">
+
+        <div class="row gy-5 gx-lg-5">
+
+          <div class="col-lg-4">
+
+            <div class="info">
+              <h3>Get in touch</h3>
+              <p>Temukan kami di : </p>
+
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4>Location:</h4>
+                  <p>Jl. Jalan 1, Jawa Tenggara, ID 11111</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p>inicontoh@email.loh</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h4>Call:</h4>
+                  <p>+62 8234 5678 910</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Your message has been sent. Thank you!</div>
+                <!-- <div class="error-message"></div> -->
+                <!-- <div class="sent-message">Your message has been sent. Thank you!</div> -->
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Halo Mure</h3>
+              <p>
+                Jl. Jalan 1 <br>
+                Jawa Tenggara 111111, ID<br><br>
+                <strong>Phone:</strong> +62 8234 5678 910<br>
+                <strong>Email:</strong> inicontoh@email.loh<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#index">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Make It</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Konsultasi</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">E-learning</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter!</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="copyright">
+            &copy;<strong><span>2024 Hacktiv8 Workshop Program</span></strong> Muhammad Reza Zulfikarsyah.
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+            <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
 
       </div>
     </div>
 
-    <div class="container mt-4">
-      <div class="cr">
-        &copy; <strong><span>2024 Hacktiv8 Workshop Program Muhammad Reza Zulfikarsyah</span></strong>.
-      </div>
-    </div>
+  </footer><!-- End Footer -->
 
-  </footer>
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 
-  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/aos/aos.js"></script>
-  <script src="assets/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <script src="halomure.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

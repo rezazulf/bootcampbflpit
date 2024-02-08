@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "5c75ae31-5423-4c9a-b379-aa278479bfe7",
+		"name": "Hacktiv8-Golang",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12473257",
+		"_collection_link": "https://www.postman.com/rezazulf/workspace/hacktiv8/collection/12473257-5c75ae31-5423-4c9a-b379-aa278479bfe7?action=share&source=collection_link&creator=12473257"
+	},
+	"item": [
+		{
+			"name": "Assignment-2",
+			"item": [
+				{
+					"name": "Get All Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/orders",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Orders by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/orders/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"orders",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create New Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerName\": \"Alvin Banjarasin\",\r\n    \"items\":[\r\n        {\r\n            \"itemCode\": \"123\",\r\n            \"description\": \"Keyboard\",\r\n            \"quantity\": 14\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/orders",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Order customerName",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerName\": \"Alvin Meledak\",\r\n    \"items\":[\r\n        {\r\n            \"itemCode\": \"123\",\r\n            \"description\": \"Keyboard\",\r\n            \"quantity\": 14\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/orders/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"orders",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/orders",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Namanya jg bootcamp😊"
+		}
+	]
+}

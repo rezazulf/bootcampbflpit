@@ -1,0 +1,119 @@
+definitions:
+  models.Car:
+    properties:
+      harga:
+        type: integer
+      id:
+        type: integer
+      merk:
+        type: string
+      typeCars:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /cars/:
+    post:
+      consumes:
+      - application/json
+      description: Post details of car corresponding to the input Id
+      parameters:
+      - description: create car
+        in: body
+        name: models.Car
+        required: true
+        schema:
+          $ref: '#/definitions/models.Car'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Car'
+      summary: Post details for a given Id
+      tags:
+      - cars
+  /cars/{Id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete the order corresponding to the input Id
+      parameters:
+      - description: ID of the car to be deleted
+        in: path
+        name: Id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+      summary: Delete car identified by the given Id
+      tags:
+      - cars
+    get:
+      consumes:
+      - application/json
+      description: Get details of car corresponding to the input Id
+      parameters:
+      - description: ID of the car
+        in: path
+        name: Id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Car'
+      summary: Get details for a given Id
+      tags:
+      - cars
+  /cars/{id}:
+    put:
+      consumes:
+      - application/json
+      description: Update the car corresponding to the input Id
+      parameters:
+      - description: ID of the car to be updated
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: create car
+        in: body
+        name: models.Car
+        required: true
+        schema:
+          $ref: '#/definitions/models.Car'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Car'
+      summary: Update car indetified by the given Id
+      tags:
+      - cars
+  /orders:
+    get:
+      consumes:
+      - application/json
+      description: Get details of all car
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Car'
+      summary: Get details
+      tags:
+      - cars
+swagger: "2.0"

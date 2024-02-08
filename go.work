@@ -1,0 +1,8 @@
+go 1.21.6
+
+use ./Day7/API
+use ./Day7/API_test
+use ./Day8/belajar-gin
+use ./Day8/belajar-gorm
+use ./Day8/assignment-2
+use ./Day8/swagger
