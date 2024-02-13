@@ -6,3 +6,9 @@ use ./Day8/belajar-gin
 use ./Day8/belajar-gorm
 use ./Day8/assignment-2
 use ./Day8/swagger
+use ./Day9/belajar-vendor
+use ./Day9/belajar-auth/middleware
+use ./Day9/belajar-authh
+use ./Day9/go-unit-test
+// use ./Day9/belajar-mock
+use ./Day9/assignment3
