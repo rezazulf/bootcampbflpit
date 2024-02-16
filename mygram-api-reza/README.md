@@ -4,7 +4,15 @@ My Gram API is an API that allows users to create, read, update, and delete phot
 Built with Go and PostgreSQL. This is a final project of Hacktiv8's Golang Scalable Web Service Bootcamp.
 
 # Deployed at :
+[RAILWAY](https://mygram-api-reza-production.up.railway.app/)
 
+## API Documentation 📑
+
+Access the API documentation at `https://mygram-api-reza-production.up.railway.app/swagger/index.html` when the application is running.
+
+# POSTMAN:
+- [Collection](https://github.com/) (The Collection)
+- [Postman Workspace](https://www.postman.com/rezazulf/workspace/hacktiv8/collection/12473257-91467b6c-5f71-4a35-859b-44ca50000004?action=share&creator=12473257&active-environment=12473257-be5307ab-1540-437a-a02a-6ad5ae4fb837) (The workspace)
 
 ## Run the Application ▶️
 
@@ -41,16 +49,15 @@ Berikut adalah daftar endpoint-endpoint yang disediakan dalam aplikasi MyGram:
 ```
 Register [POST]: Mendaftarkan user baru.
 Login [POST]: Proses masuk user.
-Update User [PUT]: Proses edit user.
-Delete User [Delete]: Proses penghapusan user.
+UpdateUserData [PUT]: Proses edit user.
+DeleteUser [Delete]: Proses penghapusan user.
 ```
 
 #### 2. Photo
 
 ```
-GetAll [GET]: Mendapatkan daftar semua foto.
-GetOne [GET]: Mendapatkan satu foto berdasarkan ID.
-CreatePhoto [POST]: Membuat foto baru.
+GetAllPhotos [GET]: Mendapatkan daftar semua foto.
+PostPhoto [POST]: Membuat foto baru.
 UpdatePhoto [PUT]: Memperbarui informasi foto.
 DeletePhoto [DELETE]: Menghapus foto.
 ```
@@ -58,9 +65,8 @@ DeletePhoto [DELETE]: Menghapus foto.
 #### 3. Comment
 
 ```
-GetAll [GET]: Mendapatkan daftar semua komentar.
-GetOne [GET]: Mendapatkan satu komentar berdasarkan ID.
-CreateComment [POST]: Membuat komentar baru.
+GetAllComments [GET]: Mendapatkan daftar semua komentar.
+PostComment [POST]: Membuat komentar baru.
 UpdateComment [PUT]: Memperbarui komentar.
 DeleteComment [DELETE]: Menghapus komentar.
 ```
@@ -68,16 +74,11 @@ DeleteComment [DELETE]: Menghapus komentar.
 #### 3. Social Media
 
 ```
-GetAll [GET]: Mendapatkan daftar semua media sosial.
-GetOne [GET]: Mendapatkan satu media sosial berdasarkan ID.
-CreateSocialMedia [POST]: Membuat media sosial baru.
-UpdateSocialMedia [PUT]: Memperbarui informasi media sosial.
+GetAllSocialMedia [GET]: Mendapatkan daftar semua media sosial.
+AddSocialMedia [POST]: Membuat media sosial baru.
+EditSocialMediaData [PUT]: Memperbarui informasi media sosial.
 DeleteSocialMedia [DELETE]: Menghapus media sosial.
 ```
-
-## API Documentation 📑
-
-Access the API documentation at `http://localhost:3000/swagger/index.html` when the application is running.
 
 ## Tools ⚒️
 
