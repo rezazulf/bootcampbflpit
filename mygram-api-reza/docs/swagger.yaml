@@ -1,0 +1,696 @@
+definitions:
+  structs.CommentRequest:
+    properties:
+      message:
+        example: This is a comment
+        type: string
+      photo_id:
+        example: 1
+        type: integer
+    type: object
+  structs.CommentResponse:
+    properties:
+      created_at:
+        type: string
+      id:
+        type: integer
+      message:
+        type: string
+      photo_id:
+        type: integer
+      user_id:
+        type: integer
+    type: object
+  structs.DeleteCommentResponse:
+    properties:
+      message:
+        type: string
+    type: object
+  structs.DeletePhotoResponse:
+    properties:
+      message:
+        type: string
+    type: object
+  structs.DeleteSocialMediaResponse:
+    properties:
+      message:
+        type: string
+    type: object
+  structs.DeleteUserResponse:
+    properties:
+      message:
+        type: string
+    type: object
+  structs.EmbeddedPhotoResponse:
+    properties:
+      caption:
+        type: string
+      id:
+        type: integer
+      photo_url:
+        type: string
+      title:
+        type: string
+      user_id:
+        type: integer
+    type: object
+  structs.EmbeddedUser:
+    properties:
+      email:
+        type: string
+      id:
+        type: integer
+      username:
+        type: string
+    type: object
+  structs.EmbeddedUserResponse:
+    properties:
+      email:
+        type: string
+      username:
+        type: string
+    type: object
+  structs.GetCommentResponse:
+    properties:
+      Photo:
+        $ref: '#/definitions/structs.EmbeddedPhotoResponse'
+      User:
+        $ref: '#/definitions/structs.EmbeddedUserResponse'
+      created_at:
+        type: string
+      id:
+        type: integer
+      message:
+        type: string
+      photo_id:
+        type: integer
+      updated_at:
+        type: string
+      user_id:
+        type: integer
+    type: object
+  structs.GetPhotoResponse:
+    properties:
+      User:
+        $ref: '#/definitions/structs.EmbeddedUserResponse'
+      caption:
+        type: string
+      created_at:
+        type: string
+      id:
+        type: integer
+      photo_url:
+        type: string
+      title:
+        type: string
+      updated_at:
+        type: string
+      user_id:
+        type: integer
+    type: object
+  structs.GetSocialMediaResponse:
+    properties:
+      created_at:
+        type: string
+      id:
+        type: integer
+      name:
+        type: string
+      social_media_url:
+        type: string
+      updated_at:
+        type: string
+      user:
+        $ref: '#/definitions/structs.EmbeddedUser'
+      user_id:
+        type: integer
+    type: object
+  structs.LoginRequest:
+    properties:
+      email:
+        example: reza@mail.com
+        type: string
+      password:
+        example: password
+        type: string
+    type: object
+  structs.LoginResponse:
+    properties:
+      access_token:
+        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5hdWZhbHRhbXBhbkBnbWFpbC5jb20iLCJleHAiOjE2NjYyMjYwNjUsImlkIjozN30.Q0vWwNIom3ua1LpbyACM_zIIjXkq7AFN8U6YONL1lFM
+        type: string
+    type: object
+  structs.PhotoRequest:
+    properties:
+      caption:
+        example: This is my first ever photo uploaded
+        type: string
+      photo_url:
+        example: https://mygram.com/photos/1
+        type: string
+      title:
+        example: My first ever photo uploaded
+        type: string
+    type: object
+  structs.RegisterRequest:
+    properties:
+      age:
+        example: 20
+        type: integer
+      email:
+        example: reza@mail.com
+        type: string
+      password:
+        example: password
+        type: string
+      username:
+        example: rezazulfi
+        type: string
+    type: object
+  structs.RegisterResponse:
+    properties:
+      age:
+        type: integer
+      email:
+        type: string
+      id:
+        type: integer
+      username:
+        type: string
+    type: object
+  structs.SocialMediaRequest:
+    properties:
+      name:
+        example: Facebook
+        type: string
+      social_media_url:
+        example: https://www.facebook.com/username
+        type: string
+    type: object
+  structs.SocialMediaResponse:
+    properties:
+      created_at:
+        type: string
+      id:
+        type: integer
+      name:
+        type: string
+      social_media_url:
+        type: string
+      user_id:
+        type: integer
+    type: object
+  structs.UpdateCommentRequest:
+    properties:
+      message:
+        example: This is a comment
+        type: string
+    type: object
+  structs.UpdateCommentResponse:
+    properties:
+      created_at:
+        type: string
+      id:
+        type: integer
+      message:
+        type: string
+      photo_id:
+        type: integer
+      updated_at:
+        type: string
+      user_id:
+        type: integer
+    type: object
+  structs.UpdatePhotoResponse:
+    properties:
+      caption:
+        type: string
+      id:
+        type: integer
+      photo_url:
+        type: string
+      title:
+        type: string
+      updated_at:
+        type: string
+      user_id:
+        type: integer
+    type: object
+  structs.UpdateSocialMediaResponse:
+    properties:
+      id:
+        type: integer
+      name:
+        type: string
+      social_media_url:
+        type: string
+      updated_at:
+        type: string
+      user_id:
+        type: integer
+    type: object
+  structs.UpdateUserDataRequest:
+    properties:
+      email:
+        example: reza@mail.com
+        type: string
+      username:
+        example: rezazulf
+        type: string
+    type: object
+  structs.UpdateUserDataResponse:
+    properties:
+      age:
+        type: integer
+      email:
+        type: string
+      id:
+        type: integer
+      updated_at:
+        type: string
+      username:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /comment:
+    get:
+      description: Get all comments
+      operationId: get-all-comments
+      parameters:
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/structs.GetCommentResponse'
+      summary: Get all comments
+      tags:
+      - comments
+    post:
+      consumes:
+      - application/json
+      description: Post new comment on photo
+      operationId: post-comment
+      parameters:
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: Post comment request body json
+        in: body
+        name: RequestBody
+        required: true
+        schema:
+          $ref: '#/definitions/structs.CommentRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/structs.CommentResponse'
+      summary: Post new comment on photo
+      tags:
+      - comments
+  /comment/{commentID}:
+    delete:
+      description: Delete comment
+      operationId: delete-comment
+      parameters:
+      - description: comments's id
+        in: path
+        name: commentID
+        required: true
+        type: integer
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/structs.DeleteCommentResponse'
+      summary: Delete existing comment
+      tags:
+      - comments
+    put:
+      consumes:
+      - application/json
+      description: Update comment
+      operationId: update-comment
+      parameters:
+      - description: comments's id
+        in: path
+        name: commentID
+        required: true
+        type: integer
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: Edit photo request body json
+        in: body
+        name: RequestBody
+        required: true
+        schema:
+          $ref: '#/definitions/structs.UpdateCommentRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/structs.UpdateCommentResponse'
+      summary: Update existing comment
+      tags:
+      - comments
+  /photo:
+    get:
+      description: Get all photos
+      operationId: get-all-photos
+      parameters:
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/structs.GetPhotoResponse'
+      summary: Get all photos
+      tags:
+      - photos
+    post:
+      consumes:
+      - application/json
+      description: Post a new photo
+      operationId: post-photo
+      parameters:
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: Add photo request body json
+        in: body
+        name: RequestBody
+        required: true
+        schema:
+          $ref: '#/definitions/structs.PhotoRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/structs.UpdatePhotoResponse'
+      summary: Post a new photo
+      tags:
+      - photos
+  /photo/{photoID}:
+    delete:
+      description: Delete photo
+      operationId: delete-photo
+      parameters:
+      - description: photo's id
+        in: path
+        name: photoID
+        required: true
+        type: integer
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/structs.DeletePhotoResponse'
+      summary: Delete existing photo
+      tags:
+      - photos
+    put:
+      consumes:
+      - application/json
+      description: Update photo data
+      operationId: update-photo
+      parameters:
+      - description: photo's id
+        in: path
+        name: photoID
+        required: true
+        type: integer
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: Edit photo request body json
+        in: body
+        name: RequestBody
+        required: true
+        schema:
+          $ref: '#/definitions/structs.PhotoRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/structs.UpdatePhotoResponse'
+      summary: Update existing photo data
+      tags:
+      - photos
+  /socialmedia:
+    get:
+      description: Get all social medias
+      operationId: get-social-medias
+      parameters:
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/structs.GetSocialMediaResponse'
+      summary: Get all social media datas
+      tags:
+      - socialmedias
+    post:
+      consumes:
+      - application/json
+      description: Add Social Media to your account
+      operationId: add-social-media
+      parameters:
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: Add social media request body json
+        in: body
+        name: RequestBody
+        required: true
+        schema:
+          $ref: '#/definitions/structs.SocialMediaRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/structs.SocialMediaResponse'
+      summary: Add social media data to user's account
+      tags:
+      - socialmedias
+  /socialmedia/{socialMediaID}:
+    delete:
+      description: Delete social media data
+      operationId: delete-social-media
+      parameters:
+      - description: social media's id
+        in: path
+        name: socialMediaID
+        required: true
+        type: integer
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/structs.DeleteSocialMediaResponse'
+      summary: Delete existing social media data
+      tags:
+      - socialmedias
+    put:
+      consumes:
+      - application/json
+      description: Edit social media data
+      operationId: edit-social-media
+      parameters:
+      - description: social media's id
+        in: path
+        name: socialMediaID
+        required: true
+        type: integer
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: Edit social media request body json
+        in: body
+        name: RequestBody
+        required: true
+        schema:
+          $ref: '#/definitions/structs.SocialMediaRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/structs.UpdateSocialMediaResponse'
+      summary: Edit existing social media data
+      tags:
+      - socialmedias
+  /user:
+    delete:
+      description: Delete user data
+      operationId: delete-user
+      parameters:
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/structs.DeleteUserResponse'
+      summary: Delete user's account
+      tags:
+      - users
+    put:
+      consumes:
+      - application/json
+      description: Update user data
+      operationId: update-user-data
+      parameters:
+      - default: Bearer <Add access token here>
+        description: Insert your access token
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      - description: Update user request body json
+        in: body
+        name: RequestBody
+        required: true
+        schema:
+          $ref: '#/definitions/structs.UpdateUserDataRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/structs.UpdateUserDataResponse'
+      summary: Update user's email and username
+      tags:
+      - users
+  /user/login:
+    post:
+      consumes:
+      - application/json
+      description: Login into your user account and get access token with jwt
+      operationId: login-users
+      parameters:
+      - description: Login request body json
+        in: body
+        name: RequestBody
+        required: true
+        schema:
+          $ref: '#/definitions/structs.LoginRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/structs.LoginResponse'
+      summary: Login into existing account
+      tags:
+      - users
+  /user/register:
+    post:
+      consumes:
+      - application/json
+      description: Register a new user
+      operationId: register-users
+      parameters:
+      - description: Register request body json
+        in: body
+        name: RequestBody
+        required: true
+        schema:
+          $ref: '#/definitions/structs.RegisterRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/structs.RegisterResponse'
+      summary: Register new user account
+      tags:
+      - users
+swagger: "2.0"
