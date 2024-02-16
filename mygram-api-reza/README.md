@@ -11,7 +11,7 @@ Built with Go and PostgreSQL. This is a final project of Hacktiv8's Golang Scala
 Access the API documentation at `https://mygram-api-reza-production.up.railway.app/swagger/index.html` when the application is running.
 
 # POSTMAN:
-- [Collection](https://github.com/) (The Collection)
+- [Collection](https://github.com/rezazulf/bootcampbflpit/blob/main/mygram-api-reza/Hacktiv8%20Final%20Project%20GO%20MyGram.postman_collection.json) (The Collection)
 - [Postman Workspace](https://www.postman.com/rezazulf/workspace/hacktiv8/collection/12473257-91467b6c-5f71-4a35-859b-44ca50000004?action=share&creator=12473257&active-environment=12473257-be5307ab-1540-437a-a02a-6ad5ae4fb837) (The workspace)
 
 ## Run the Application ▶️
