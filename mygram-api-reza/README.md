@@ -4,9 +4,9 @@ My Gram API is an API that allows users to create, read, update, and delete phot
 Built with Go and PostgreSQL. This is a final project of Hacktiv8's Golang Scalable Web Service Bootcamp.
 
 # Deployed at :
-[RAILWAY](https://mygram-api-reza-production.up.railway.app/)
+- [RAILWAY](https://mygram-api-reza-production.up.railway.app/)
 
-## API Documentation 📑
+# API Documentation 📑
 
 Access the API documentation at `https://mygram-api-reza-production.up.railway.app/swagger/index.html` when the application is running.
 
