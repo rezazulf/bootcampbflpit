@@ -3,6 +3,9 @@
 My Gram API is an API that allows users to create, read, update, and delete photos.
 Built with Go and PostgreSQL. This is a final project of Hacktiv8's Golang Scalable Web Service Bootcamp.
 
+# Deployed at :
+
+
 ## Run the Application ▶️
 
 This application requires Go and PostgreSQL to run. Make sure you have them installed on your machine before running the
@@ -71,8 +74,6 @@ CreateSocialMedia [POST]: Membuat media sosial baru.
 UpdateSocialMedia [PUT]: Memperbarui informasi media sosial.
 DeleteSocialMedia [DELETE]: Menghapus media sosial.
 ```
-
-Dengan menyediakan endpoint-endpoint ini, MyGram memungkinkan pengguna
 
 ## API Documentation 📑
 

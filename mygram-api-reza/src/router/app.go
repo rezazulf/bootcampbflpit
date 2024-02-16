@@ -10,6 +10,7 @@ import (
 	"final-project-h8-mygram-Reza/src/repository/user_repository/user_pg"
 	"final-project-h8-mygram-Reza/src/service"
 	"fmt"
+	"os"
 
 	"github.com/gin-gonic/gin"
 	swaggerfiles "github.com/swaggo/files"     // swagger embed files
@@ -17,7 +18,7 @@ import (
 )
 
 var (
-	PORT = 3000
+	PORT = os.Getenv("PORT")
 )
 
 func StartApp() {
@@ -85,11 +86,11 @@ func StartApp() {
 	docs.SwaggerInfo.Title = "MyGram API"
 	docs.SwaggerInfo.Description = "My Gram API is an API that allows users to create, read, update, and delete photos."
 	docs.SwaggerInfo.Version = "1.0"
-	docs.SwaggerInfo.Host = "localhost:3000"
+	docs.SwaggerInfo.Host = "mygram-api-reza-production.up.railway.app"
 	docs.SwaggerInfo.Schemes = []string{"https"}
 
 	route.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 
 	fmt.Println("Server running on PORT =>", PORT)
-	route.Run(":3000")
+	route.Run(":" + PORT)
 }
