@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"final-project-go/database"
-	"final-project-go/helpers"
-	"final-project-go/models"
+	"belajar-jwt/database"
+	"belajar-jwt/helpers"
+	"belajar-jwt/models"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -35,10 +35,9 @@ func UserRegister(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusCreated, gin.H{
-		"id":       User.ID,
-		"username": User.Username,
-		"email":    User.Email,
-		"age":      User.Age,
+		"id":        User.ID,
+		"email":     User.Email,
+		"full_name": User.FullName,
 	})
 }
 

@@ -11,4 +11,6 @@ use ./Day9/belajar-auth/middleware
 use ./Day9/belajar-authh
 use ./Day9/go-unit-test
 // use ./Day9/belajar-mock
-use ./Day9/assignment3
+use ./Day9/assignment-3
+use ./Day10/belajar-jwt
+use ./mygram-api-reza
